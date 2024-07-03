@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #818584;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Make the container a flexbox */
+}
+
+.container-welcome {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex; /* Make the container a flexbox */
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #081E2E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex: 0.4;
+    text-align: left;
+}
+
+.header-right {
+    flex: 1;
+    text-align: left;
+}
+
+.logo-img {
+    max-height: 80px;
+}
+
+header h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 44px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.primary-section {
+    background-color: #0C293D;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.primary-section h2, p{
+    color: white;
+    padding: 0px 60px;
+    text-align: center;
+}
+
+.secondary-section, .quaternary-section {
+    background-color: #0C293D;
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.quaternary-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.quaternary-section ul li {
+    margin-bottom: 10px;
+}
+
+.tertiary-section {
+    background-color: #415868;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    justify-content: left;
+}
+.tertiary-section p, .tertiary-section h2 {
+    text-align: left;
+    padding: 5px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+/* New code */
+.content-wrapper {  /* Apply styles to content-wrapper instead of container*/
+  display: flex; /* Make the content-wrapper a flexbox */
+}
+
+.part1 {
+  background-color: #ffffff; /* Change color as needed */
+  padding: 20px;
+  width: 50%;
+  flex: 1;
+}
+
+.part2 {
+  width: 50%;
+  flex: 1;
+  padding: 20px;
+}
+
+.part2 img {
+  max-width: 100%; /* Allow image to fill the width */
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .part1, .part2 {
+        width: 100%; /* Make sections full width on smaller screens */
+    }
+}
+
+footer {
+    background-color: #415868;
+    color: #818584;
+    text-align: center;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-footer {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-conoce-mas {
+    display: inline-block;
+    background-color: #F4C53C;
+    color: #081E2E;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    line-height: 48px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.logo-img-sesion {
+    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px auto;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.titulo-inicio-sesion {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 32px;
+    color: #081E2E;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #081E2E;
+    align-self: flex-start;
+    padding-left: 5px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #415868;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #F4C53C;
+    color: #081E2E;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #6696B3;
+    color: #FFFFFF;
+}
